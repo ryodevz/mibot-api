@@ -1,0 +1,24 @@
+{
+    "name": "ryodevz/mibot-api",
+    "description": "MIBot API wrapper for ease of use.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "ryodevz/httpfulwrapper": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "RyoDev",
+            "email": "ytryo789@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ryodevz\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
