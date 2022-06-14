@@ -26,7 +26,7 @@ use Ryodevz\MiBot\Api;
 $receiver = '6287999999999';
 $message_text = 'Hello World'
 
-$response = Api::textMessage($receiver, $message_text);
+$response = Api::textMessage($receiver, $message_text)->send();
 
 var_dump($response);
 
@@ -59,7 +59,7 @@ $buttons = [
     ],
 ]
 
-$response = Api::buttonMessage($receiver, $message_text, $buttons)
+$response = Api::buttonMessage($receiver, $message_text, $buttons)->send();
 
 var_dump($response);
 ```
