@@ -1,6 +1,6 @@
 ## MiBot API Wrapper
 MIBot API wrapper for ease of use.
-### installation
+### Installation
 ```bash
 composer require ryodevz/mibot-api
 ```
