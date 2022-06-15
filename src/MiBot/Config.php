@@ -32,7 +32,9 @@ class Config
     protected static function getHeaders()
     {
         return [
-            'Authorization' => 'Bearer ' . static::$apiToken
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+            'Authorization' => 'Bearer ' . static::$apiToken,
         ];
     }
 }
