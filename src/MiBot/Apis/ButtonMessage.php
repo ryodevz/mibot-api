@@ -2,8 +2,7 @@
 
 namespace Ryodevz\MiBot\Apis;
 
-use Ryodevz\HttpfulWrapper\Http;
-use Ryodevz\HttpfulWrapper\Mime;
+use Ryodevz\Httpwrapper\Http;
 use Ryodevz\MiBot\Config;
 
 class ButtonMessage extends Config
@@ -25,11 +24,10 @@ class ButtonMessage extends Config
 
     public function send()
     {
-        $response = Http::post(static::getFullURL($this->path), $this->getParams(), Mime::FORM)
-            ->expectsJson()
-            ->addHeaders(static::getAuthorizationHeaders())
+        $response = Http::withHeaders(static::getHeaders())
+            ->post(static::getFullURL($this->path), $this->getParams())
             ->send()
-            ->body;
+            ->body();
 
         return $response;
     }

@@ -29,7 +29,7 @@ class Config
         return static::$url . $path;
     }
 
-    protected static function getAuthorizationHeaders()
+    protected static function getHeaders()
     {
         return [
             'Authorization' => 'Bearer ' . static::$apiToken

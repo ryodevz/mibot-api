@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "ryodevz/httpfulwrapper": "dev-master"
+        "ryodevz/httpwrapper": "dev-main"
     },
     "authors": [
         {
